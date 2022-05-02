@@ -1,0 +1,78 @@
+{
+  "name": "vue-admin-v2",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "preview": "node ./scripts/preview.js",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "init-pages": "node ./scripts/init-all-pages.js && node ./scripts/init-all-routes.js"
+  },
+  "dependencies": {
+    "@charrue/eslint-config-vue2": "^0.1.1",
+    "@charrue/layout": "latest",
+    "@vue/composition-api": "^1.4.1",
+    "axios": "^0.24.0",
+    "core-js": "^3.6.5",
+    "dayjs": "^1.10.7",
+    "element-ui": "^2.15.6",
+    "js-cookie": "^3.0.1",
+    "lodash-es": "^4.17.21",
+    "nprogress": "^0.2.0",
+    "qs": "^6.10.2",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/eslint-parser": "^7.16.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.16.0",
+    "@charrue/eslint-config-base": "latest",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@ls-lint/ls-lint": "^1.10.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-e2e-cypress": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/test-utils": "^1.0.3",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "commitizen": "^4.2.4",
+    "compression": "^1.7.4",
+    "connect": "^3.7.0",
+    "conventional-changelog": "^3.1.25",
+    "conventional-changelog-cli": "^2.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "cors": "^2.8.5",
+    "eslint": "^8.6.0",
+    "husky": "^7.0.4",
+    "kolorist": "^1.5.0",
+    "lint-staged": "^12.1.2",
+    "mustache": "^4.2.0",
+    "open": "^8.4.0",
+    "sass": "1.32.12",
+    "sass-loader": "^8.0.2",
+    "script-ext-html-webpack-plugin": "^2.1.5",
+    "sirv": "^1.0.19",
+    "vue-cli-plugin-windicss": "~1.1.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "npm run lint"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
